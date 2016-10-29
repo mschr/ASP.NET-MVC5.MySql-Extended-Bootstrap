@@ -1,0 +1,42 @@
+﻿@model IEnumerable<my.ns.entities.dto.identity.Role>
+@using my.ns.client.Helpers
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Roles";
+
+}
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ButtonBack("Index")
+    @Html.ButtonCreate("AddRole")
+</p>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<table class="table">
+    <tr>
+        <th>
+            Role
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleName)
+            </td>
+            <td>
+                @if (item.RoleName.ToLower() != "administrator")
+                {
+                    @Html.ActionLink("Delete", "DeleteUserRole", new { RoleName = item.RoleName }, new
+               {
+                   onclick = "return confirm('Are you sure you wish to delete this role?');"
+               })
+                }
+            </td>
+
+        </tr>
+    }
+</table>
+

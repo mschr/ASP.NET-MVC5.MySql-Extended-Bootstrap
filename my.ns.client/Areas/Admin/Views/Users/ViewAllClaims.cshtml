@@ -1,0 +1,44 @@
+﻿@model IEnumerable<my.ns.entities.dto.identity.UserClaims>
+@using i18n = Resources.Views.Admin.Users.Resources
+
+@using Client.Views;
+@{
+    ViewBag.Title = "ViewAllClaims";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ButtonCreate("CreateClaim")
+</p>
+<pre>
+@my.ns.client.Helpers.ObjectDumper.Dump(User.Identity, 0)
+</pre>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaimType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaimValue)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaimType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaimValue)
+            </td>
+            <td>
+                @Html.ButtonDelete("Delete", new { id = item.ClaimType })
+            </td>
+        </tr>
+    }
+
+</table>

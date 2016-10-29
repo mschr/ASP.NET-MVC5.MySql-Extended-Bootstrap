@@ -1,0 +1,57 @@
+﻿@model my.ns.entities.dto.identity.UserAndRoles
+@using my.ns.client.Helpers
+@using i18n = Resources.Views.Admin.Users.Resources
+@using i18nNav = Resources.Views.Admin.Resources
+@using i18nCommon = Resources.Views.Common.ViewTranslation
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = i18nNav.UsersController_EditUserRolesNavText;
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ButtonBack("EditUser", new { UserName = Model.UserName })
+</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <table class="table">
+        <tr>
+            <th>
+                @i18n.EditRolesTableHeaderText
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Roles)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleName)
+                </td>
+                <td>
+                    @if (!((Model.UserName.ToLower() == this.User.Identity.Name.ToLower())
+                        && item.RoleName == "Administrator") && item.RoleName != "No Roles Found")
+                    {
+                        @Html.ActionLink(i18nCommon.DeleteButtonText, "DeleteRole", new { UserName = item.UserName, RoleName = item.RoleName }, new
+                   {
+                       @class="btn btn-danger",
+                       onclick = string.Format("return confirm(\"{0}\");", string.Format(i18n.DeleteRoleConfirmationText, item.RoleName)),
+                   })
+                    }
+                </td>
+            </tr>
+        }
+        <tr>
+            <td>
+                @Html.DropDownList("AddRole", null, htmlAttributes: new { @class = "form-control pull-right" })
+            </td>
+            <td>
+                <input type="submit" value="@i18n.AddRoleButtonText" style="padding: 6px 12px" class="btn btn-default" />
+            </td>
+        </tr>
+    </table>
+}

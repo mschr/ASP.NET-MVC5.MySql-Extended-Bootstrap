@@ -1,0 +1,3921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PC0900" xml:space="preserve">
+    <value>København C</value>
+  </data>
+  <data name="PC0910" xml:space="preserve">
+    <value>København C</value>
+  </data>
+  <data name="PC0917" xml:space="preserve">
+    <value>Københavns Pakkecenter</value>
+  </data>
+  <data name="PC0918" xml:space="preserve">
+    <value>Københavns Pakke BRC</value>
+  </data>
+  <data name="PC0919" xml:space="preserve">
+    <value>Returprint BRC</value>
+  </data>
+  <data name="PC0929" xml:space="preserve">
+    <value>København C</value>
+  </data>
+  <data name="PC0960" xml:space="preserve">
+    <value>Internationalt Postcenter</value>
+  </data>
+  <data name="PC0999" xml:space="preserve">
+    <value>København C</value>
+  </data>
+  <data name="PC1001" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1002" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1003" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1004" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1005" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1006" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1007" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1008" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1009" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1010" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1011" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1012" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1013" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1014" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1015" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1016" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1017" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1018" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1019" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1020" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1021" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1022" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1023" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1024" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1025" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1026" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1045" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1050" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1051" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1052" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1053" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1054" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1055" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC10551" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1056" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1057" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1058" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1059" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1060" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1061" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1062" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1063" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1064" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1065" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1066" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1067" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1068" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1069" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1070" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1071" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1072" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1073" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1074" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1092" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1093" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1095" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1098" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1100" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1101" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1102" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1103" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1104" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1105" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1106" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1107" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1110" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1111" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1112" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1113" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1114" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1115" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1116" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1117" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1118" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1119" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1120" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1121" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1122" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1123" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1124" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1125" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1126" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1127" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1128" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1129" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1130" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1131" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1140" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1147" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1148" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1150" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1151" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1152" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1153" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1154" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1155" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1156" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1157" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1158" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1159" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1160" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1161" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1162" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1163" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1164" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1165" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC11651" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1166" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1167" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1168" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1169" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1170" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1171" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1172" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1173" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1174" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1175" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1200" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1201" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1202" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1203" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1204" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1205" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1206" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1207" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1208" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1209" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1210" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1211" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1212" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1213" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1214" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1215" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1216" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1217" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1218" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12181" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12182" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12183" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12184" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12185" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1219" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1220" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1221" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1240" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1250" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1251" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1253" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1254" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1255" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1256" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1257" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1259" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12591" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1260" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1261" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1263" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC12631" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1264" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1265" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1266" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1267" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1268" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1270" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1271" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1300" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1301" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1302" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1303" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1304" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1306" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1307" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC13071" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1308" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1309" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1310" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1311" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1312" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1313" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1314" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1315" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1316" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1317" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1318" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1319" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1320" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1321" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1322" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1323" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1324" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1325" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1326" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1327" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1328" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1329" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1350" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1352" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1353" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1354" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1355" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1356" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1357" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1358" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1359" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC13591" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1360" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1361" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC13611" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1362" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1363" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1364" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1365" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1366" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1367" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1368" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1369" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1370" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1371" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1400" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14001" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1401" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1402" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14021" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14022" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14023" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14024" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1403" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1404" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1406" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1407" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1408" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1409" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1410" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1411" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14111" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1412" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1413" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1414" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1415" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1416" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1417" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1418" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1419" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1420" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1421" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1422" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1423" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1424" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1425" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1426" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1427" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1428" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1429" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1430" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1431" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1432" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14321" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14322" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1433" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14331" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14332" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14333" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14334" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14335" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14336" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1434" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1435" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1436" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14361" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14362" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14363" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14364" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14365" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14366" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1437" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14371" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143710" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143711" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14372" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14373" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14374" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14375" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14376" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14377" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14378" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14379" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1438" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14381" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14382" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14383" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14384" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1439" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14391" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143910" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143911" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143912" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143913" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC143914" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14392" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14393" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14394" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14395" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14396" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14397" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14398" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14399" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1440" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14401" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC144010" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14402" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14403" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14404" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14405" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14406" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14407" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14408" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14409" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1441" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14411" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC14412" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1448" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1450" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1451" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1452" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1453" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1454" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1455" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1456" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1457" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1458" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1459" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1460" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1461" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1462" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1463" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1464" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1465" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1466" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1467" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1468" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1470" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1471" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1472" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1473" xml:space="preserve">
+    <value>København K</value>
+  </data>
+  <data name="PC1500" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1501" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1502" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1503" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1504" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1505" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1506" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1507" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1508" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1509" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1510" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1512" xml:space="preserve">
+    <value>Returpost</value>
+  </data>
+  <data name="PC1513" xml:space="preserve">
+    <value>Flytninger og Nejtak</value>
+  </data>
+  <data name="PC1532" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1533" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1550" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15501" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1551" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1552" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1553" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15531" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1554" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1555" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1556" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1557" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1558" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1559" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1560" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1561" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15611" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1562" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1563" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1564" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1567" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1568" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1569" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1570" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15701" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1571" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1572" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1573" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1574" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1575" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1576" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1577" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15771" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC15772" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1592" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1599" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1600" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1601" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1602" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1603" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1604" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1605" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1606" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1607" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1608" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1609" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1610" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1611" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1612" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1613" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1614" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1615" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1616" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1617" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1618" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1619" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1620" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC16201" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1621" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1622" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1623" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1624" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1630" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1631" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1632" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1633" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1634" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1635" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1650" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1651" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1652" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1653" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1654" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1655" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1656" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1657" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1658" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1659" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1660" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC16601" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1661" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1662" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1663" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1664" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1665" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1666" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1667" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1668" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1669" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1670" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1671" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC16711" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1672" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1673" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1674" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1675" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1676" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1677" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1699" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1700" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1701" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1702" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1703" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1704" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1705" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1706" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1707" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1708" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1709" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1710" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1711" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17111" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1712" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1713" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1714" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1715" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1716" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1717" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1718" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1719" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1720" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1721" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1722" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1723" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1724" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1725" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1726" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1727" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1728" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1729" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1730" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1731" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1732" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1733" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1734" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1735" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1736" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1737" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1738" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1739" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1749" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1750" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1751" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1752" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1753" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1754" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1755" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1756" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1757" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1758" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1759" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1760" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1761" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1762" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1763" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1764" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1765" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1766" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1770" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1771" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1772" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1773" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1774" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1775" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1777" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1780" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1782" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1785" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1786" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1787" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1790" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1799" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17991" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC179910" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC179911" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17992" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17993" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17994" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17995" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17996" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17997" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17998" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC17999" xml:space="preserve">
+    <value>København V</value>
+  </data>
+  <data name="PC1800" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1801" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1802" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1803" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1804" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1805" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1806" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1807" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1808" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1809" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1810" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1811" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1812" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1813" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1814" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1815" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1816" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1817" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1818" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1819" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1820" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1822" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1823" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1824" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1825" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1826" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1827" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1828" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1829" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1835" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1850" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1851" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1852" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1853" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1854" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1855" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1856" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1857" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1860" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1861" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1862" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1863" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1864" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1865" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1866" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1867" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1868" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1870" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1871" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1872" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1873" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1874" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1875" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1876" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1877" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1878" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1879" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1900" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1901" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1902" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1903" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1904" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1905" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1906" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1908" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1909" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1910" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1911" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1912" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1913" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1914" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1915" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1916" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1917" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1920" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1921" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1922" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1923" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1924" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1925" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1926" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1927" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1928" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1931" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1950" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1951" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1952" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1953" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1954" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1955" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1956" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1957" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1958" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1959" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1960" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1961" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1962" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1963" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1964" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1965" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1966" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1967" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1970" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1971" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1972" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1973" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC1974" xml:space="preserve">
+    <value>Frederiksberg C</value>
+  </data>
+  <data name="PC2000" xml:space="preserve">
+    <value>Frederiksberg</value>
+  </data>
+  <data name="PC2100" xml:space="preserve">
+    <value>København Ø</value>
+  </data>
+  <data name="PC2150" xml:space="preserve">
+    <value>Nordhavn</value>
+  </data>
+  <data name="PC2200" xml:space="preserve">
+    <value>København N</value>
+  </data>
+  <data name="PC2300" xml:space="preserve">
+    <value>København S</value>
+  </data>
+  <data name="PC2400" xml:space="preserve">
+    <value>København NV</value>
+  </data>
+  <data name="PC2412" xml:space="preserve">
+    <value>Grønland</value>
+  </data>
+  <data name="PC2450" xml:space="preserve">
+    <value>København SV</value>
+  </data>
+  <data name="PC2500" xml:space="preserve">
+    <value>Valby</value>
+  </data>
+  <data name="PC2600" xml:space="preserve">
+    <value>Glostrup</value>
+  </data>
+  <data name="PC2605" xml:space="preserve">
+    <value>Brøndby</value>
+  </data>
+  <data name="PC2610" xml:space="preserve">
+    <value>Rødovre</value>
+  </data>
+  <data name="PC2620" xml:space="preserve">
+    <value>Albertslund</value>
+  </data>
+  <data name="PC2625" xml:space="preserve">
+    <value>Vallensbæk</value>
+  </data>
+  <data name="PC2630" xml:space="preserve">
+    <value>Taastrup</value>
+  </data>
+  <data name="PC2635" xml:space="preserve">
+    <value>Ishøj</value>
+  </data>
+  <data name="PC2640" xml:space="preserve">
+    <value>Hedehusene</value>
+  </data>
+  <data name="PC2650" xml:space="preserve">
+    <value>Hvidovre</value>
+  </data>
+  <data name="PC2660" xml:space="preserve">
+    <value>Brøndby Strand</value>
+  </data>
+  <data name="PC2665" xml:space="preserve">
+    <value>Vallensbæk Strand</value>
+  </data>
+  <data name="PC2670" xml:space="preserve">
+    <value>Greve</value>
+  </data>
+  <data name="PC2680" xml:space="preserve">
+    <value>Solrød Strand</value>
+  </data>
+  <data name="PC2690" xml:space="preserve">
+    <value>Karlslunde</value>
+  </data>
+  <data name="PC2700" xml:space="preserve">
+    <value>Brønshøj</value>
+  </data>
+  <data name="PC2720" xml:space="preserve">
+    <value>Vanløse</value>
+  </data>
+  <data name="PC2730" xml:space="preserve">
+    <value>Herlev</value>
+  </data>
+  <data name="PC2740" xml:space="preserve">
+    <value>Skovlunde</value>
+  </data>
+  <data name="PC2750" xml:space="preserve">
+    <value>Ballerup</value>
+  </data>
+  <data name="PC2760" xml:space="preserve">
+    <value>Måløv</value>
+  </data>
+  <data name="PC2765" xml:space="preserve">
+    <value>Smørum</value>
+  </data>
+  <data name="PC2770" xml:space="preserve">
+    <value>Kastrup</value>
+  </data>
+  <data name="PC2791" xml:space="preserve">
+    <value>Dragør</value>
+  </data>
+  <data name="PC2800" xml:space="preserve">
+    <value>Kongens Lyngby</value>
+  </data>
+  <data name="PC2820" xml:space="preserve">
+    <value>Gentofte</value>
+  </data>
+  <data name="PC2830" xml:space="preserve">
+    <value>Virum</value>
+  </data>
+  <data name="PC2840" xml:space="preserve">
+    <value>Holte</value>
+  </data>
+  <data name="PC2850" xml:space="preserve">
+    <value>Nærum</value>
+  </data>
+  <data name="PC2860" xml:space="preserve">
+    <value>Søborg</value>
+  </data>
+  <data name="PC2870" xml:space="preserve">
+    <value>Dyssegård</value>
+  </data>
+  <data name="PC2880" xml:space="preserve">
+    <value>Bagsværd</value>
+  </data>
+  <data name="PC2900" xml:space="preserve">
+    <value>Hellerup</value>
+  </data>
+  <data name="PC2920" xml:space="preserve">
+    <value>Charlottenlund</value>
+  </data>
+  <data name="PC2930" xml:space="preserve">
+    <value>Klampenborg</value>
+  </data>
+  <data name="PC2942" xml:space="preserve">
+    <value>Skodsborg</value>
+  </data>
+  <data name="PC2950" xml:space="preserve">
+    <value>Vedbæk</value>
+  </data>
+  <data name="PC2960" xml:space="preserve">
+    <value>Rungsted Kyst</value>
+  </data>
+  <data name="PC2970" xml:space="preserve">
+    <value>Hørsholm</value>
+  </data>
+  <data name="PC2980" xml:space="preserve">
+    <value>Kokkedal</value>
+  </data>
+  <data name="PC2990" xml:space="preserve">
+    <value>Nivå</value>
+  </data>
+  <data name="PC3000" xml:space="preserve">
+    <value>Helsingør</value>
+  </data>
+  <data name="PC3050" xml:space="preserve">
+    <value>Humlebæk</value>
+  </data>
+  <data name="PC3060" xml:space="preserve">
+    <value>Espergærde</value>
+  </data>
+  <data name="PC3070" xml:space="preserve">
+    <value>Snekkersten</value>
+  </data>
+  <data name="PC3080" xml:space="preserve">
+    <value>Tikøb</value>
+  </data>
+  <data name="PC3100" xml:space="preserve">
+    <value>Hornbæk</value>
+  </data>
+  <data name="PC3120" xml:space="preserve">
+    <value>Dronningmølle</value>
+  </data>
+  <data name="PC3140" xml:space="preserve">
+    <value>Ålsgårde</value>
+  </data>
+  <data name="PC3150" xml:space="preserve">
+    <value>Hellebæk</value>
+  </data>
+  <data name="PC3200" xml:space="preserve">
+    <value>Helsinge</value>
+  </data>
+  <data name="PC3210" xml:space="preserve">
+    <value>Vejby</value>
+  </data>
+  <data name="PC3220" xml:space="preserve">
+    <value>Tisvildeleje</value>
+  </data>
+  <data name="PC3230" xml:space="preserve">
+    <value>Græsted</value>
+  </data>
+  <data name="PC3250" xml:space="preserve">
+    <value>Gilleleje</value>
+  </data>
+  <data name="PC3300" xml:space="preserve">
+    <value>Frederiksværk</value>
+  </data>
+  <data name="PC3310" xml:space="preserve">
+    <value>Ølsted</value>
+  </data>
+  <data name="PC3320" xml:space="preserve">
+    <value>Skævinge</value>
+  </data>
+  <data name="PC3330" xml:space="preserve">
+    <value>Gørløse</value>
+  </data>
+  <data name="PC3360" xml:space="preserve">
+    <value>Liseleje</value>
+  </data>
+  <data name="PC3370" xml:space="preserve">
+    <value>Melby</value>
+  </data>
+  <data name="PC3390" xml:space="preserve">
+    <value>Hundested</value>
+  </data>
+  <data name="PC3400" xml:space="preserve">
+    <value>Hillerød</value>
+  </data>
+  <data name="PC3450" xml:space="preserve">
+    <value>Allerød</value>
+  </data>
+  <data name="PC3460" xml:space="preserve">
+    <value>Birkerød</value>
+  </data>
+  <data name="PC3480" xml:space="preserve">
+    <value>Fredensborg</value>
+  </data>
+  <data name="PC3490" xml:space="preserve">
+    <value>Kvistgård</value>
+  </data>
+  <data name="PC3500" xml:space="preserve">
+    <value>Værløse</value>
+  </data>
+  <data name="PC3520" xml:space="preserve">
+    <value>Farum</value>
+  </data>
+  <data name="PC3540" xml:space="preserve">
+    <value>Lynge</value>
+  </data>
+  <data name="PC3550" xml:space="preserve">
+    <value>Slangerup</value>
+  </data>
+  <data name="PC3600" xml:space="preserve">
+    <value>Frederikssund</value>
+  </data>
+  <data name="PC3630" xml:space="preserve">
+    <value>Jægerspris</value>
+  </data>
+  <data name="PC3650" xml:space="preserve">
+    <value>Ølstykke</value>
+  </data>
+  <data name="PC3660" xml:space="preserve">
+    <value>Stenløse</value>
+  </data>
+  <data name="PC3670" xml:space="preserve">
+    <value>Veksø Sjælland</value>
+  </data>
+  <data name="PC3700" xml:space="preserve">
+    <value>Rønne</value>
+  </data>
+  <data name="PC3720" xml:space="preserve">
+    <value>Aakirkeby</value>
+  </data>
+  <data name="PC3730" xml:space="preserve">
+    <value>Nexø</value>
+  </data>
+  <data name="PC3740" xml:space="preserve">
+    <value>Svaneke</value>
+  </data>
+  <data name="PC3751" xml:space="preserve">
+    <value>Østermarie</value>
+  </data>
+  <data name="PC3760" xml:space="preserve">
+    <value>Gudhjem</value>
+  </data>
+  <data name="PC3770" xml:space="preserve">
+    <value>Allinge</value>
+  </data>
+  <data name="PC3782" xml:space="preserve">
+    <value>Klemensker</value>
+  </data>
+  <data name="PC3790" xml:space="preserve">
+    <value>Hasle</value>
+  </data>
+  <data name="PC4000" xml:space="preserve">
+    <value>Roskilde</value>
+  </data>
+  <data name="PC4030" xml:space="preserve">
+    <value>Tune</value>
+  </data>
+  <data name="PC4040" xml:space="preserve">
+    <value>Jyllinge</value>
+  </data>
+  <data name="PC4050" xml:space="preserve">
+    <value>Skibby</value>
+  </data>
+  <data name="PC4060" xml:space="preserve">
+    <value>Kirke Såby</value>
+  </data>
+  <data name="PC4070" xml:space="preserve">
+    <value>Kirke Hyllinge</value>
+  </data>
+  <data name="PC4100" xml:space="preserve">
+    <value>Ringsted</value>
+  </data>
+  <data name="PC4129" xml:space="preserve">
+    <value>Ringsted</value>
+  </data>
+  <data name="PC4130" xml:space="preserve">
+    <value>Viby Sjælland</value>
+  </data>
+  <data name="PC4140" xml:space="preserve">
+    <value>Borup</value>
+  </data>
+  <data name="PC4160" xml:space="preserve">
+    <value>Herlufmagle</value>
+  </data>
+  <data name="PC4171" xml:space="preserve">
+    <value>Glumsø</value>
+  </data>
+  <data name="PC4173" xml:space="preserve">
+    <value>Fjenneslev</value>
+  </data>
+  <data name="PC4174" xml:space="preserve">
+    <value>Jystrup Midtsj</value>
+  </data>
+  <data name="PC4180" xml:space="preserve">
+    <value>Sorø</value>
+  </data>
+  <data name="PC4190" xml:space="preserve">
+    <value>Munke Bjergby</value>
+  </data>
+  <data name="PC4200" xml:space="preserve">
+    <value>Slagelse</value>
+  </data>
+  <data name="PC4220" xml:space="preserve">
+    <value>Korsør</value>
+  </data>
+  <data name="PC4230" xml:space="preserve">
+    <value>Skælskør</value>
+  </data>
+  <data name="PC4241" xml:space="preserve">
+    <value>Vemmelev</value>
+  </data>
+  <data name="PC4242" xml:space="preserve">
+    <value>Boeslunde</value>
+  </data>
+  <data name="PC4243" xml:space="preserve">
+    <value>Rude</value>
+  </data>
+  <data name="PC4250" xml:space="preserve">
+    <value>Fuglebjerg</value>
+  </data>
+  <data name="PC4261" xml:space="preserve">
+    <value>Dalmose</value>
+  </data>
+  <data name="PC4262" xml:space="preserve">
+    <value>Sandved</value>
+  </data>
+  <data name="PC4270" xml:space="preserve">
+    <value>Høng</value>
+  </data>
+  <data name="PC4281" xml:space="preserve">
+    <value>Gørlev</value>
+  </data>
+  <data name="PC4291" xml:space="preserve">
+    <value>Ruds Vedby</value>
+  </data>
+  <data name="PC4293" xml:space="preserve">
+    <value>Dianalund</value>
+  </data>
+  <data name="PC4295" xml:space="preserve">
+    <value>Stenlille</value>
+  </data>
+  <data name="PC4296" xml:space="preserve">
+    <value>Nyrup</value>
+  </data>
+  <data name="PC4300" xml:space="preserve">
+    <value>Holbæk</value>
+  </data>
+  <data name="PC4320" xml:space="preserve">
+    <value>Lejre</value>
+  </data>
+  <data name="PC4330" xml:space="preserve">
+    <value>Hvalsø</value>
+  </data>
+  <data name="PC4340" xml:space="preserve">
+    <value>Tølløse</value>
+  </data>
+  <data name="PC4350" xml:space="preserve">
+    <value>Ugerløse</value>
+  </data>
+  <data name="PC4360" xml:space="preserve">
+    <value>Kirke Eskilstrup</value>
+  </data>
+  <data name="PC4370" xml:space="preserve">
+    <value>Store Merløse</value>
+  </data>
+  <data name="PC4390" xml:space="preserve">
+    <value>Vipperød</value>
+  </data>
+  <data name="PC4400" xml:space="preserve">
+    <value>Kalundborg</value>
+  </data>
+  <data name="PC4420" xml:space="preserve">
+    <value>Regstrup</value>
+  </data>
+  <data name="PC4440" xml:space="preserve">
+    <value>Mørkøv</value>
+  </data>
+  <data name="PC4450" xml:space="preserve">
+    <value>Jyderup</value>
+  </data>
+  <data name="PC4460" xml:space="preserve">
+    <value>Snertinge</value>
+  </data>
+  <data name="PC4470" xml:space="preserve">
+    <value>Svebølle</value>
+  </data>
+  <data name="PC4480" xml:space="preserve">
+    <value>Store Fuglede</value>
+  </data>
+  <data name="PC4490" xml:space="preserve">
+    <value>Jerslev Sjælland</value>
+  </data>
+  <data name="PC4500" xml:space="preserve">
+    <value>Nykøbing Sj</value>
+  </data>
+  <data name="PC4520" xml:space="preserve">
+    <value>Svinninge</value>
+  </data>
+  <data name="PC4532" xml:space="preserve">
+    <value>Gislinge</value>
+  </data>
+  <data name="PC4534" xml:space="preserve">
+    <value>Hørve</value>
+  </data>
+  <data name="PC4540" xml:space="preserve">
+    <value>Fårevejle</value>
+  </data>
+  <data name="PC4550" xml:space="preserve">
+    <value>Asnæs</value>
+  </data>
+  <data name="PC4560" xml:space="preserve">
+    <value>Vig</value>
+  </data>
+  <data name="PC4571" xml:space="preserve">
+    <value>Grevinge</value>
+  </data>
+  <data name="PC4572" xml:space="preserve">
+    <value>Nørre Asmindrup</value>
+  </data>
+  <data name="PC4573" xml:space="preserve">
+    <value>Højby</value>
+  </data>
+  <data name="PC4581" xml:space="preserve">
+    <value>Rørvig</value>
+  </data>
+  <data name="PC4583" xml:space="preserve">
+    <value>Sjællands Odde</value>
+  </data>
+  <data name="PC4591" xml:space="preserve">
+    <value>Føllenslev</value>
+  </data>
+  <data name="PC4592" xml:space="preserve">
+    <value>Sejerø</value>
+  </data>
+  <data name="PC4593" xml:space="preserve">
+    <value>Eskebjerg</value>
+  </data>
+  <data name="PC4600" xml:space="preserve">
+    <value>Køge</value>
+  </data>
+  <data name="PC4621" xml:space="preserve">
+    <value>Gadstrup</value>
+  </data>
+  <data name="PC4622" xml:space="preserve">
+    <value>Havdrup</value>
+  </data>
+  <data name="PC4623" xml:space="preserve">
+    <value>Lille Skensved</value>
+  </data>
+  <data name="PC4632" xml:space="preserve">
+    <value>Bjæverskov</value>
+  </data>
+  <data name="PC4640" xml:space="preserve">
+    <value>Faxe</value>
+  </data>
+  <data name="PC4652" xml:space="preserve">
+    <value>Hårlev</value>
+  </data>
+  <data name="PC4653" xml:space="preserve">
+    <value>Karise</value>
+  </data>
+  <data name="PC4654" xml:space="preserve">
+    <value>Faxe Ladeplads</value>
+  </data>
+  <data name="PC4660" xml:space="preserve">
+    <value>Store Heddinge</value>
+  </data>
+  <data name="PC4671" xml:space="preserve">
+    <value>Strøby</value>
+  </data>
+  <data name="PC4672" xml:space="preserve">
+    <value>Klippinge</value>
+  </data>
+  <data name="PC4673" xml:space="preserve">
+    <value>Rødvig Stevns</value>
+  </data>
+  <data name="PC4681" xml:space="preserve">
+    <value>Herfølge</value>
+  </data>
+  <data name="PC4682" xml:space="preserve">
+    <value>Tureby</value>
+  </data>
+  <data name="PC4683" xml:space="preserve">
+    <value>Rønnede</value>
+  </data>
+  <data name="PC4684" xml:space="preserve">
+    <value>Holmegaard</value>
+  </data>
+  <data name="PC4690" xml:space="preserve">
+    <value>Haslev</value>
+  </data>
+  <data name="PC4700" xml:space="preserve">
+    <value>Næstved</value>
+  </data>
+  <data name="PC4720" xml:space="preserve">
+    <value>Præstø</value>
+  </data>
+  <data name="PC4733" xml:space="preserve">
+    <value>Tappernøje</value>
+  </data>
+  <data name="PC4735" xml:space="preserve">
+    <value>Mern</value>
+  </data>
+  <data name="PC4736" xml:space="preserve">
+    <value>Karrebæksminde</value>
+  </data>
+  <data name="PC4750" xml:space="preserve">
+    <value>Lundby</value>
+  </data>
+  <data name="PC4760" xml:space="preserve">
+    <value>Vordingborg</value>
+  </data>
+  <data name="PC4771" xml:space="preserve">
+    <value>Kalvehave</value>
+  </data>
+  <data name="PC4772" xml:space="preserve">
+    <value>Langebæk</value>
+  </data>
+  <data name="PC4773" xml:space="preserve">
+    <value>Stensved</value>
+  </data>
+  <data name="PC4780" xml:space="preserve">
+    <value>Stege</value>
+  </data>
+  <data name="PC4791" xml:space="preserve">
+    <value>Borre</value>
+  </data>
+  <data name="PC4792" xml:space="preserve">
+    <value>Askeby</value>
+  </data>
+  <data name="PC4793" xml:space="preserve">
+    <value>Bogø By</value>
+  </data>
+  <data name="PC4800" xml:space="preserve">
+    <value>Nykøbing F</value>
+  </data>
+  <data name="PC4840" xml:space="preserve">
+    <value>Nørre Alslev</value>
+  </data>
+  <data name="PC4850" xml:space="preserve">
+    <value>Stubbekøbing</value>
+  </data>
+  <data name="PC4862" xml:space="preserve">
+    <value>Guldborg</value>
+  </data>
+  <data name="PC4863" xml:space="preserve">
+    <value>Eskilstrup</value>
+  </data>
+  <data name="PC4871" xml:space="preserve">
+    <value>Horbelev</value>
+  </data>
+  <data name="PC4872" xml:space="preserve">
+    <value>Idestrup</value>
+  </data>
+  <data name="PC4873" xml:space="preserve">
+    <value>Væggerløse</value>
+  </data>
+  <data name="PC4874" xml:space="preserve">
+    <value>Gedser</value>
+  </data>
+  <data name="PC4880" xml:space="preserve">
+    <value>Nysted</value>
+  </data>
+  <data name="PC4891" xml:space="preserve">
+    <value>Toreby L</value>
+  </data>
+  <data name="PC4892" xml:space="preserve">
+    <value>Kettinge</value>
+  </data>
+  <data name="PC4894" xml:space="preserve">
+    <value>Øster Ulslev</value>
+  </data>
+  <data name="PC4895" xml:space="preserve">
+    <value>Errindlev</value>
+  </data>
+  <data name="PC4900" xml:space="preserve">
+    <value>Nakskov</value>
+  </data>
+  <data name="PC4912" xml:space="preserve">
+    <value>Harpelunde</value>
+  </data>
+  <data name="PC4913" xml:space="preserve">
+    <value>Horslunde</value>
+  </data>
+  <data name="PC4920" xml:space="preserve">
+    <value>Søllested</value>
+  </data>
+  <data name="PC4930" xml:space="preserve">
+    <value>Maribo</value>
+  </data>
+  <data name="PC4941" xml:space="preserve">
+    <value>Bandholm</value>
+  </data>
+  <data name="PC4943" xml:space="preserve">
+    <value>Torrig L</value>
+  </data>
+  <data name="PC4944" xml:space="preserve">
+    <value>Fejø</value>
+  </data>
+  <data name="PC4951" xml:space="preserve">
+    <value>Nørreballe</value>
+  </data>
+  <data name="PC4952" xml:space="preserve">
+    <value>Stokkemarke</value>
+  </data>
+  <data name="PC4953" xml:space="preserve">
+    <value>Vesterborg</value>
+  </data>
+  <data name="PC4960" xml:space="preserve">
+    <value>Holeby</value>
+  </data>
+  <data name="PC4970" xml:space="preserve">
+    <value>Rødby</value>
+  </data>
+  <data name="PC4983" xml:space="preserve">
+    <value>Dannemare</value>
+  </data>
+  <data name="PC4990" xml:space="preserve">
+    <value>Sakskøbing</value>
+  </data>
+  <data name="PC4992" xml:space="preserve">
+    <value>Midtsjælland USF P</value>
+  </data>
+  <data name="PC5000" xml:space="preserve">
+    <value>Odense C</value>
+  </data>
+  <data name="PC5029" xml:space="preserve">
+    <value>Odense C</value>
+  </data>
+  <data name="PC5100" xml:space="preserve">
+    <value>Odense C</value>
+  </data>
+  <data name="PC5200" xml:space="preserve">
+    <value>Odense V</value>
+  </data>
+  <data name="PC5210" xml:space="preserve">
+    <value>Odense NV</value>
+  </data>
+  <data name="PC5220" xml:space="preserve">
+    <value>Odense SØ</value>
+  </data>
+  <data name="PC5230" xml:space="preserve">
+    <value>Odense M</value>
+  </data>
+  <data name="PC5240" xml:space="preserve">
+    <value>Odense NØ</value>
+  </data>
+  <data name="PC5250" xml:space="preserve">
+    <value>Odense SV</value>
+  </data>
+  <data name="PC5260" xml:space="preserve">
+    <value>Odense S</value>
+  </data>
+  <data name="PC5270" xml:space="preserve">
+    <value>Odense N</value>
+  </data>
+  <data name="PC5290" xml:space="preserve">
+    <value>Marslev</value>
+  </data>
+  <data name="PC5300" xml:space="preserve">
+    <value>Kerteminde</value>
+  </data>
+  <data name="PC5320" xml:space="preserve">
+    <value>Agedrup</value>
+  </data>
+  <data name="PC5330" xml:space="preserve">
+    <value>Munkebo</value>
+  </data>
+  <data name="PC5350" xml:space="preserve">
+    <value>Rynkeby</value>
+  </data>
+  <data name="PC5370" xml:space="preserve">
+    <value>Mesinge</value>
+  </data>
+  <data name="PC5380" xml:space="preserve">
+    <value>Dalby</value>
+  </data>
+  <data name="PC5390" xml:space="preserve">
+    <value>Martofte</value>
+  </data>
+  <data name="PC5400" xml:space="preserve">
+    <value>Bogense</value>
+  </data>
+  <data name="PC5450" xml:space="preserve">
+    <value>Otterup</value>
+  </data>
+  <data name="PC5462" xml:space="preserve">
+    <value>Morud</value>
+  </data>
+  <data name="PC5463" xml:space="preserve">
+    <value>Harndrup</value>
+  </data>
+  <data name="PC5464" xml:space="preserve">
+    <value>Brenderup Fyn</value>
+  </data>
+  <data name="PC5466" xml:space="preserve">
+    <value>Asperup</value>
+  </data>
+  <data name="PC5471" xml:space="preserve">
+    <value>Søndersø</value>
+  </data>
+  <data name="PC5474" xml:space="preserve">
+    <value>Veflinge</value>
+  </data>
+  <data name="PC5485" xml:space="preserve">
+    <value>Skamby</value>
+  </data>
+  <data name="PC5491" xml:space="preserve">
+    <value>Blommenslyst</value>
+  </data>
+  <data name="PC5492" xml:space="preserve">
+    <value>Vissenbjerg</value>
+  </data>
+  <data name="PC5500" xml:space="preserve">
+    <value>Middelfart</value>
+  </data>
+  <data name="PC5540" xml:space="preserve">
+    <value>Ullerslev</value>
+  </data>
+  <data name="PC5550" xml:space="preserve">
+    <value>Langeskov</value>
+  </data>
+  <data name="PC5560" xml:space="preserve">
+    <value>Aarup</value>
+  </data>
+  <data name="PC5580" xml:space="preserve">
+    <value>Nørre Aaby</value>
+  </data>
+  <data name="PC5591" xml:space="preserve">
+    <value>Gelsted</value>
+  </data>
+  <data name="PC5592" xml:space="preserve">
+    <value>Ejby</value>
+  </data>
+  <data name="PC5600" xml:space="preserve">
+    <value>Faaborg</value>
+  </data>
+  <data name="PC5610" xml:space="preserve">
+    <value>Assens</value>
+  </data>
+  <data name="PC5620" xml:space="preserve">
+    <value>Glamsbjerg</value>
+  </data>
+  <data name="PC5631" xml:space="preserve">
+    <value>Ebberup</value>
+  </data>
+  <data name="PC5642" xml:space="preserve">
+    <value>Millinge</value>
+  </data>
+  <data name="PC5672" xml:space="preserve">
+    <value>Broby</value>
+  </data>
+  <data name="PC5683" xml:space="preserve">
+    <value>Haarby</value>
+  </data>
+  <data name="PC5690" xml:space="preserve">
+    <value>Tommerup</value>
+  </data>
+  <data name="PC5700" xml:space="preserve">
+    <value>Svendborg</value>
+  </data>
+  <data name="PC5750" xml:space="preserve">
+    <value>Ringe</value>
+  </data>
+  <data name="PC5762" xml:space="preserve">
+    <value>Vester Skerninge</value>
+  </data>
+  <data name="PC5771" xml:space="preserve">
+    <value>Stenstrup</value>
+  </data>
+  <data name="PC5772" xml:space="preserve">
+    <value>Kværndrup</value>
+  </data>
+  <data name="PC5792" xml:space="preserve">
+    <value>Årslev</value>
+  </data>
+  <data name="PC5800" xml:space="preserve">
+    <value>Nyborg</value>
+  </data>
+  <data name="PC5853" xml:space="preserve">
+    <value>Ørbæk</value>
+  </data>
+  <data name="PC5854" xml:space="preserve">
+    <value>Gislev</value>
+  </data>
+  <data name="PC5856" xml:space="preserve">
+    <value>Ryslinge</value>
+  </data>
+  <data name="PC5863" xml:space="preserve">
+    <value>Ferritslev Fyn</value>
+  </data>
+  <data name="PC5871" xml:space="preserve">
+    <value>Frørup</value>
+  </data>
+  <data name="PC5874" xml:space="preserve">
+    <value>Hesselager</value>
+  </data>
+  <data name="PC5881" xml:space="preserve">
+    <value>Skårup Fyn</value>
+  </data>
+  <data name="PC5882" xml:space="preserve">
+    <value>Vejstrup</value>
+  </data>
+  <data name="PC5883" xml:space="preserve">
+    <value>Oure</value>
+  </data>
+  <data name="PC5884" xml:space="preserve">
+    <value>Gudme</value>
+  </data>
+  <data name="PC5892" xml:space="preserve">
+    <value>Gudbjerg Sydfyn</value>
+  </data>
+  <data name="PC5900" xml:space="preserve">
+    <value>Rudkøbing</value>
+  </data>
+  <data name="PC5932" xml:space="preserve">
+    <value>Humble</value>
+  </data>
+  <data name="PC5935" xml:space="preserve">
+    <value>Bagenkop</value>
+  </data>
+  <data name="PC5953" xml:space="preserve">
+    <value>Tranekær</value>
+  </data>
+  <data name="PC5960" xml:space="preserve">
+    <value>Marstal</value>
+  </data>
+  <data name="PC5970" xml:space="preserve">
+    <value>Ærøskøbing</value>
+  </data>
+  <data name="PC5985" xml:space="preserve">
+    <value>Søby Ærø</value>
+  </data>
+  <data name="PC6000" xml:space="preserve">
+    <value>Kolding</value>
+  </data>
+  <data name="PC6040" xml:space="preserve">
+    <value>Egtved</value>
+  </data>
+  <data name="PC6051" xml:space="preserve">
+    <value>Almind</value>
+  </data>
+  <data name="PC6052" xml:space="preserve">
+    <value>Viuf</value>
+  </data>
+  <data name="PC6064" xml:space="preserve">
+    <value>Jordrup</value>
+  </data>
+  <data name="PC6070" xml:space="preserve">
+    <value>Christiansfeld</value>
+  </data>
+  <data name="PC6091" xml:space="preserve">
+    <value>Bjert</value>
+  </data>
+  <data name="PC6092" xml:space="preserve">
+    <value>Sønder Stenderup</value>
+  </data>
+  <data name="PC6093" xml:space="preserve">
+    <value>Sjølund</value>
+  </data>
+  <data name="PC6094" xml:space="preserve">
+    <value>Hejls</value>
+  </data>
+  <data name="PC6100" xml:space="preserve">
+    <value>Haderslev</value>
+  </data>
+  <data name="PC6200" xml:space="preserve">
+    <value>Aabenraa</value>
+  </data>
+  <data name="PC6230" xml:space="preserve">
+    <value>Rødekro</value>
+  </data>
+  <data name="PC6240" xml:space="preserve">
+    <value>Løgumkloster</value>
+  </data>
+  <data name="PC6261" xml:space="preserve">
+    <value>Bredebro</value>
+  </data>
+  <data name="PC6270" xml:space="preserve">
+    <value>Tønder</value>
+  </data>
+  <data name="PC6280" xml:space="preserve">
+    <value>Højer</value>
+  </data>
+  <data name="PC6300" xml:space="preserve">
+    <value>Gråsten</value>
+  </data>
+  <data name="PC6310" xml:space="preserve">
+    <value>Broager</value>
+  </data>
+  <data name="PC6320" xml:space="preserve">
+    <value>Egernsund</value>
+  </data>
+  <data name="PC6330" xml:space="preserve">
+    <value>Padborg</value>
+  </data>
+  <data name="PC6340" xml:space="preserve">
+    <value>Kruså</value>
+  </data>
+  <data name="PC6360" xml:space="preserve">
+    <value>Tinglev</value>
+  </data>
+  <data name="PC6372" xml:space="preserve">
+    <value>Bylderup-Bov</value>
+  </data>
+  <data name="PC6392" xml:space="preserve">
+    <value>Bolderslev</value>
+  </data>
+  <data name="PC6400" xml:space="preserve">
+    <value>Sønderborg</value>
+  </data>
+  <data name="PC6430" xml:space="preserve">
+    <value>Nordborg</value>
+  </data>
+  <data name="PC6440" xml:space="preserve">
+    <value>Augustenborg</value>
+  </data>
+  <data name="PC6470" xml:space="preserve">
+    <value>Sydals</value>
+  </data>
+  <data name="PC6500" xml:space="preserve">
+    <value>Vojens</value>
+  </data>
+  <data name="PC6510" xml:space="preserve">
+    <value>Gram</value>
+  </data>
+  <data name="PC6520" xml:space="preserve">
+    <value>Toftlund</value>
+  </data>
+  <data name="PC6534" xml:space="preserve">
+    <value>Agerskov</value>
+  </data>
+  <data name="PC6535" xml:space="preserve">
+    <value>Branderup J</value>
+  </data>
+  <data name="PC6541" xml:space="preserve">
+    <value>Bevtoft</value>
+  </data>
+  <data name="PC6560" xml:space="preserve">
+    <value>Sommersted</value>
+  </data>
+  <data name="PC6580" xml:space="preserve">
+    <value>Vamdrup</value>
+  </data>
+  <data name="PC6600" xml:space="preserve">
+    <value>Vejen</value>
+  </data>
+  <data name="PC6621" xml:space="preserve">
+    <value>Gesten</value>
+  </data>
+  <data name="PC6622" xml:space="preserve">
+    <value>Bække</value>
+  </data>
+  <data name="PC6623" xml:space="preserve">
+    <value>Vorbasse</value>
+  </data>
+  <data name="PC6630" xml:space="preserve">
+    <value>Rødding</value>
+  </data>
+  <data name="PC6640" xml:space="preserve">
+    <value>Lunderskov</value>
+  </data>
+  <data name="PC6650" xml:space="preserve">
+    <value>Brørup</value>
+  </data>
+  <data name="PC6660" xml:space="preserve">
+    <value>Lintrup</value>
+  </data>
+  <data name="PC6670" xml:space="preserve">
+    <value>Holsted</value>
+  </data>
+  <data name="PC6682" xml:space="preserve">
+    <value>Hovborg</value>
+  </data>
+  <data name="PC6683" xml:space="preserve">
+    <value>Føvling</value>
+  </data>
+  <data name="PC6690" xml:space="preserve">
+    <value>Gørding</value>
+  </data>
+  <data name="PC6700" xml:space="preserve">
+    <value>Esbjerg</value>
+  </data>
+  <data name="PC6701" xml:space="preserve">
+    <value>Esbjerg</value>
+  </data>
+  <data name="PC6705" xml:space="preserve">
+    <value>Esbjerg Ø</value>
+  </data>
+  <data name="PC6710" xml:space="preserve">
+    <value>Esbjerg V</value>
+  </data>
+  <data name="PC6715" xml:space="preserve">
+    <value>Esbjerg N</value>
+  </data>
+  <data name="PC6720" xml:space="preserve">
+    <value>Fanø</value>
+  </data>
+  <data name="PC6731" xml:space="preserve">
+    <value>Tjæreborg</value>
+  </data>
+  <data name="PC6740" xml:space="preserve">
+    <value>Bramming</value>
+  </data>
+  <data name="PC6752" xml:space="preserve">
+    <value>Glejbjerg</value>
+  </data>
+  <data name="PC6753" xml:space="preserve">
+    <value>Agerbæk</value>
+  </data>
+  <data name="PC6760" xml:space="preserve">
+    <value>Ribe</value>
+  </data>
+  <data name="PC6771" xml:space="preserve">
+    <value>Gredstedbro</value>
+  </data>
+  <data name="PC6780" xml:space="preserve">
+    <value>Skærbæk</value>
+  </data>
+  <data name="PC6792" xml:space="preserve">
+    <value>Rømø</value>
+  </data>
+  <data name="PC6800" xml:space="preserve">
+    <value>Varde</value>
+  </data>
+  <data name="PC6818" xml:space="preserve">
+    <value>Årre</value>
+  </data>
+  <data name="PC6823" xml:space="preserve">
+    <value>Ansager</value>
+  </data>
+  <data name="PC6830" xml:space="preserve">
+    <value>Nørre Nebel</value>
+  </data>
+  <data name="PC6840" xml:space="preserve">
+    <value>Oksbøl</value>
+  </data>
+  <data name="PC6851" xml:space="preserve">
+    <value>Janderup Vestj</value>
+  </data>
+  <data name="PC6852" xml:space="preserve">
+    <value>Billum</value>
+  </data>
+  <data name="PC6853" xml:space="preserve">
+    <value>Vejers Strand</value>
+  </data>
+  <data name="PC6854" xml:space="preserve">
+    <value>Henne</value>
+  </data>
+  <data name="PC6855" xml:space="preserve">
+    <value>Outrup</value>
+  </data>
+  <data name="PC6857" xml:space="preserve">
+    <value>Blåvand</value>
+  </data>
+  <data name="PC6862" xml:space="preserve">
+    <value>Tistrup</value>
+  </data>
+  <data name="PC6870" xml:space="preserve">
+    <value>Ølgod</value>
+  </data>
+  <data name="PC6880" xml:space="preserve">
+    <value>Tarm</value>
+  </data>
+  <data name="PC6893" xml:space="preserve">
+    <value>Hemmet</value>
+  </data>
+  <data name="PC6900" xml:space="preserve">
+    <value>Skjern</value>
+  </data>
+  <data name="PC6920" xml:space="preserve">
+    <value>Videbæk</value>
+  </data>
+  <data name="PC6933" xml:space="preserve">
+    <value>Kibæk</value>
+  </data>
+  <data name="PC6940" xml:space="preserve">
+    <value>Lem St</value>
+  </data>
+  <data name="PC6950" xml:space="preserve">
+    <value>Ringkøbing</value>
+  </data>
+  <data name="PC6960" xml:space="preserve">
+    <value>Hvide Sande</value>
+  </data>
+  <data name="PC6971" xml:space="preserve">
+    <value>Spjald</value>
+  </data>
+  <data name="PC6973" xml:space="preserve">
+    <value>Ørnhøj</value>
+  </data>
+  <data name="PC6980" xml:space="preserve">
+    <value>Tim</value>
+  </data>
+  <data name="PC6990" xml:space="preserve">
+    <value>Ulfborg</value>
+  </data>
+  <data name="PC7000" xml:space="preserve">
+    <value>Fredericia</value>
+  </data>
+  <data name="PC7007" xml:space="preserve">
+    <value>Fredericia</value>
+  </data>
+  <data name="PC7017" xml:space="preserve">
+    <value>Taulov Pakkecenter</value>
+  </data>
+  <data name="PC7018" xml:space="preserve">
+    <value>Pakker TLP</value>
+  </data>
+  <data name="PC7029" xml:space="preserve">
+    <value>Fredericia</value>
+  </data>
+  <data name="PC7080" xml:space="preserve">
+    <value>Børkop</value>
+  </data>
+  <data name="PC7100" xml:space="preserve">
+    <value>Vejle</value>
+  </data>
+  <data name="PC7120" xml:space="preserve">
+    <value>Vejle Øst</value>
+  </data>
+  <data name="PC7130" xml:space="preserve">
+    <value>Juelsminde</value>
+  </data>
+  <data name="PC7140" xml:space="preserve">
+    <value>Stouby</value>
+  </data>
+  <data name="PC7150" xml:space="preserve">
+    <value>Barrit</value>
+  </data>
+  <data name="PC7160" xml:space="preserve">
+    <value>Tørring</value>
+  </data>
+  <data name="PC7171" xml:space="preserve">
+    <value>Uldum</value>
+  </data>
+  <data name="PC7173" xml:space="preserve">
+    <value>Vonge</value>
+  </data>
+  <data name="PC7182" xml:space="preserve">
+    <value>Bredsten</value>
+  </data>
+  <data name="PC7183" xml:space="preserve">
+    <value>Randbøl</value>
+  </data>
+  <data name="PC7184" xml:space="preserve">
+    <value>Vandel</value>
+  </data>
+  <data name="PC7190" xml:space="preserve">
+    <value>Billund</value>
+  </data>
+  <data name="PC7200" xml:space="preserve">
+    <value>Grindsted</value>
+  </data>
+  <data name="PC7250" xml:space="preserve">
+    <value>Hejnsvig</value>
+  </data>
+  <data name="PC7260" xml:space="preserve">
+    <value>Sønder Omme</value>
+  </data>
+  <data name="PC7270" xml:space="preserve">
+    <value>Stakroge</value>
+  </data>
+  <data name="PC7280" xml:space="preserve">
+    <value>Sønder Felding</value>
+  </data>
+  <data name="PC7300" xml:space="preserve">
+    <value>Jelling</value>
+  </data>
+  <data name="PC7321" xml:space="preserve">
+    <value>Gadbjerg</value>
+  </data>
+  <data name="PC7323" xml:space="preserve">
+    <value>Give</value>
+  </data>
+  <data name="PC7330" xml:space="preserve">
+    <value>Brande</value>
+  </data>
+  <data name="PC7361" xml:space="preserve">
+    <value>Ejstrupholm</value>
+  </data>
+  <data name="PC7362" xml:space="preserve">
+    <value>Hampen</value>
+  </data>
+  <data name="PC7400" xml:space="preserve">
+    <value>Herning</value>
+  </data>
+  <data name="PC7429" xml:space="preserve">
+    <value>Herning</value>
+  </data>
+  <data name="PC7430" xml:space="preserve">
+    <value>Ikast</value>
+  </data>
+  <data name="PC7441" xml:space="preserve">
+    <value>Bording</value>
+  </data>
+  <data name="PC7442" xml:space="preserve">
+    <value>Engesvang</value>
+  </data>
+  <data name="PC7451" xml:space="preserve">
+    <value>Sunds</value>
+  </data>
+  <data name="PC7470" xml:space="preserve">
+    <value>Karup J</value>
+  </data>
+  <data name="PC7480" xml:space="preserve">
+    <value>Vildbjerg</value>
+  </data>
+  <data name="PC7490" xml:space="preserve">
+    <value>Aulum</value>
+  </data>
+  <data name="PC7500" xml:space="preserve">
+    <value>Holstebro</value>
+  </data>
+  <data name="PC7540" xml:space="preserve">
+    <value>Haderup</value>
+  </data>
+  <data name="PC7550" xml:space="preserve">
+    <value>Sørvad</value>
+  </data>
+  <data name="PC7560" xml:space="preserve">
+    <value>Hjerm</value>
+  </data>
+  <data name="PC7570" xml:space="preserve">
+    <value>Vemb</value>
+  </data>
+  <data name="PC7600" xml:space="preserve">
+    <value>Struer</value>
+  </data>
+  <data name="PC7620" xml:space="preserve">
+    <value>Lemvig</value>
+  </data>
+  <data name="PC7650" xml:space="preserve">
+    <value>Bøvlingbjerg</value>
+  </data>
+  <data name="PC7660" xml:space="preserve">
+    <value>Bækmarksbro</value>
+  </data>
+  <data name="PC7673" xml:space="preserve">
+    <value>Harboøre</value>
+  </data>
+  <data name="PC7680" xml:space="preserve">
+    <value>Thyborøn</value>
+  </data>
+  <data name="PC7700" xml:space="preserve">
+    <value>Thisted</value>
+  </data>
+  <data name="PC7730" xml:space="preserve">
+    <value>Hanstholm</value>
+  </data>
+  <data name="PC7741" xml:space="preserve">
+    <value>Frøstrup</value>
+  </data>
+  <data name="PC7742" xml:space="preserve">
+    <value>Vesløs</value>
+  </data>
+  <data name="PC7752" xml:space="preserve">
+    <value>Snedsted</value>
+  </data>
+  <data name="PC7755" xml:space="preserve">
+    <value>Bedsted Thy</value>
+  </data>
+  <data name="PC7760" xml:space="preserve">
+    <value>Hurup Thy</value>
+  </data>
+  <data name="PC7770" xml:space="preserve">
+    <value>Vestervig</value>
+  </data>
+  <data name="PC7790" xml:space="preserve">
+    <value>Thyholm</value>
+  </data>
+  <data name="PC7800" xml:space="preserve">
+    <value>Skive</value>
+  </data>
+  <data name="PC7830" xml:space="preserve">
+    <value>Vinderup</value>
+  </data>
+  <data name="PC7840" xml:space="preserve">
+    <value>Højslev</value>
+  </data>
+  <data name="PC7850" xml:space="preserve">
+    <value>Stoholm Jyll</value>
+  </data>
+  <data name="PC7860" xml:space="preserve">
+    <value>Spøttrup</value>
+  </data>
+  <data name="PC7870" xml:space="preserve">
+    <value>Roslev</value>
+  </data>
+  <data name="PC7884" xml:space="preserve">
+    <value>Fur</value>
+  </data>
+  <data name="PC7900" xml:space="preserve">
+    <value>Nykøbing M</value>
+  </data>
+  <data name="PC7950" xml:space="preserve">
+    <value>Erslev</value>
+  </data>
+  <data name="PC7960" xml:space="preserve">
+    <value>Karby</value>
+  </data>
+  <data name="PC7970" xml:space="preserve">
+    <value>Redsted M</value>
+  </data>
+  <data name="PC7980" xml:space="preserve">
+    <value>Vils</value>
+  </data>
+  <data name="PC7990" xml:space="preserve">
+    <value>Øster Assels</value>
+  </data>
+  <data name="PC7992" xml:space="preserve">
+    <value>Sydjylland/Fyn USF P</value>
+  </data>
+  <data name="PC7993" xml:space="preserve">
+    <value>Sydjylland/Fyn USF B</value>
+  </data>
+  <data name="PC7996" xml:space="preserve">
+    <value>Fakturaservice</value>
+  </data>
+  <data name="PC7997" xml:space="preserve">
+    <value>Fakturascanning</value>
+  </data>
+  <data name="PC7998" xml:space="preserve">
+    <value>Statsservice</value>
+  </data>
+  <data name="PC7999" xml:space="preserve">
+    <value>Kommunepost</value>
+  </data>
+  <data name="PC8000" xml:space="preserve">
+    <value>Aarhus C</value>
+  </data>
+  <data name="PC8100" xml:space="preserve">
+    <value>Aarhus C</value>
+  </data>
+  <data name="PC8200" xml:space="preserve">
+    <value>Aarhus N</value>
+  </data>
+  <data name="PC8210" xml:space="preserve">
+    <value>Aarhus V</value>
+  </data>
+  <data name="PC8220" xml:space="preserve">
+    <value>Brabrand</value>
+  </data>
+  <data name="PC8229" xml:space="preserve">
+    <value>Risskov Ø</value>
+  </data>
+  <data name="PC8230" xml:space="preserve">
+    <value>Åbyhøj</value>
+  </data>
+  <data name="PC8240" xml:space="preserve">
+    <value>Risskov</value>
+  </data>
+  <data name="PC8245" xml:space="preserve">
+    <value>Risskov Ø</value>
+  </data>
+  <data name="PC8250" xml:space="preserve">
+    <value>Egå</value>
+  </data>
+  <data name="PC8260" xml:space="preserve">
+    <value>Viby J</value>
+  </data>
+  <data name="PC8270" xml:space="preserve">
+    <value>Højbjerg</value>
+  </data>
+  <data name="PC8300" xml:space="preserve">
+    <value>Odder</value>
+  </data>
+  <data name="PC8305" xml:space="preserve">
+    <value>Samsø</value>
+  </data>
+  <data name="PC8310" xml:space="preserve">
+    <value>Tranbjerg J</value>
+  </data>
+  <data name="PC8320" xml:space="preserve">
+    <value>Mårslet</value>
+  </data>
+  <data name="PC8330" xml:space="preserve">
+    <value>Beder</value>
+  </data>
+  <data name="PC8340" xml:space="preserve">
+    <value>Malling</value>
+  </data>
+  <data name="PC8350" xml:space="preserve">
+    <value>Hundslund</value>
+  </data>
+  <data name="PC8355" xml:space="preserve">
+    <value>Solbjerg</value>
+  </data>
+  <data name="PC8361" xml:space="preserve">
+    <value>Hasselager</value>
+  </data>
+  <data name="PC8362" xml:space="preserve">
+    <value>Hørning</value>
+  </data>
+  <data name="PC8370" xml:space="preserve">
+    <value>Hadsten</value>
+  </data>
+  <data name="PC8380" xml:space="preserve">
+    <value>Trige</value>
+  </data>
+  <data name="PC8381" xml:space="preserve">
+    <value>Tilst</value>
+  </data>
+  <data name="PC8382" xml:space="preserve">
+    <value>Hinnerup</value>
+  </data>
+  <data name="PC8400" xml:space="preserve">
+    <value>Ebeltoft</value>
+  </data>
+  <data name="PC8410" xml:space="preserve">
+    <value>Rønde</value>
+  </data>
+  <data name="PC8420" xml:space="preserve">
+    <value>Knebel</value>
+  </data>
+  <data name="PC8444" xml:space="preserve">
+    <value>Balle</value>
+  </data>
+  <data name="PC8450" xml:space="preserve">
+    <value>Hammel</value>
+  </data>
+  <data name="PC8462" xml:space="preserve">
+    <value>Harlev J</value>
+  </data>
+  <data name="PC8464" xml:space="preserve">
+    <value>Galten</value>
+  </data>
+  <data name="PC8471" xml:space="preserve">
+    <value>Sabro</value>
+  </data>
+  <data name="PC8472" xml:space="preserve">
+    <value>Sporup</value>
+  </data>
+  <data name="PC8500" xml:space="preserve">
+    <value>Grenaa</value>
+  </data>
+  <data name="PC8520" xml:space="preserve">
+    <value>Lystrup</value>
+  </data>
+  <data name="PC8530" xml:space="preserve">
+    <value>Hjortshøj</value>
+  </data>
+  <data name="PC8541" xml:space="preserve">
+    <value>Skødstrup</value>
+  </data>
+  <data name="PC8543" xml:space="preserve">
+    <value>Hornslet</value>
+  </data>
+  <data name="PC8544" xml:space="preserve">
+    <value>Mørke</value>
+  </data>
+  <data name="PC8550" xml:space="preserve">
+    <value>Ryomgård</value>
+  </data>
+  <data name="PC8560" xml:space="preserve">
+    <value>Kolind</value>
+  </data>
+  <data name="PC8570" xml:space="preserve">
+    <value>Trustrup</value>
+  </data>
+  <data name="PC8581" xml:space="preserve">
+    <value>Nimtofte</value>
+  </data>
+  <data name="PC8585" xml:space="preserve">
+    <value>Glesborg</value>
+  </data>
+  <data name="PC8586" xml:space="preserve">
+    <value>Ørum Djurs</value>
+  </data>
+  <data name="PC8592" xml:space="preserve">
+    <value>Anholt</value>
+  </data>
+  <data name="PC8600" xml:space="preserve">
+    <value>Silkeborg</value>
+  </data>
+  <data name="PC8620" xml:space="preserve">
+    <value>Kjellerup</value>
+  </data>
+  <data name="PC8632" xml:space="preserve">
+    <value>Lemming</value>
+  </data>
+  <data name="PC8641" xml:space="preserve">
+    <value>Sorring</value>
+  </data>
+  <data name="PC8643" xml:space="preserve">
+    <value>Ans By</value>
+  </data>
+  <data name="PC8653" xml:space="preserve">
+    <value>Them</value>
+  </data>
+  <data name="PC8654" xml:space="preserve">
+    <value>Bryrup</value>
+  </data>
+  <data name="PC8660" xml:space="preserve">
+    <value>Skanderborg</value>
+  </data>
+  <data name="PC8670" xml:space="preserve">
+    <value>Låsby</value>
+  </data>
+  <data name="PC8680" xml:space="preserve">
+    <value>Ry</value>
+  </data>
+  <data name="PC8700" xml:space="preserve">
+    <value>Horsens</value>
+  </data>
+  <data name="PC8721" xml:space="preserve">
+    <value>Daugård</value>
+  </data>
+  <data name="PC8722" xml:space="preserve">
+    <value>Hedensted</value>
+  </data>
+  <data name="PC8723" xml:space="preserve">
+    <value>Løsning</value>
+  </data>
+  <data name="PC8732" xml:space="preserve">
+    <value>Hovedgård</value>
+  </data>
+  <data name="PC8740" xml:space="preserve">
+    <value>Brædstrup</value>
+  </data>
+  <data name="PC8751" xml:space="preserve">
+    <value>Gedved</value>
+  </data>
+  <data name="PC8752" xml:space="preserve">
+    <value>Østbirk</value>
+  </data>
+  <data name="PC8762" xml:space="preserve">
+    <value>Flemming</value>
+  </data>
+  <data name="PC8763" xml:space="preserve">
+    <value>Rask Mølle</value>
+  </data>
+  <data name="PC8765" xml:space="preserve">
+    <value>Klovborg</value>
+  </data>
+  <data name="PC8766" xml:space="preserve">
+    <value>Nørre Snede</value>
+  </data>
+  <data name="PC8781" xml:space="preserve">
+    <value>Stenderup</value>
+  </data>
+  <data name="PC8783" xml:space="preserve">
+    <value>Hornsyld</value>
+  </data>
+  <data name="PC8800" xml:space="preserve">
+    <value>Viborg</value>
+  </data>
+  <data name="PC8830" xml:space="preserve">
+    <value>Tjele</value>
+  </data>
+  <data name="PC8831" xml:space="preserve">
+    <value>Løgstrup</value>
+  </data>
+  <data name="PC8832" xml:space="preserve">
+    <value>Skals</value>
+  </data>
+  <data name="PC8840" xml:space="preserve">
+    <value>Rødkærsbro</value>
+  </data>
+  <data name="PC8850" xml:space="preserve">
+    <value>Bjerringbro</value>
+  </data>
+  <data name="PC8860" xml:space="preserve">
+    <value>Ulstrup</value>
+  </data>
+  <data name="PC8870" xml:space="preserve">
+    <value>Langå</value>
+  </data>
+  <data name="PC8881" xml:space="preserve">
+    <value>Thorsø</value>
+  </data>
+  <data name="PC8882" xml:space="preserve">
+    <value>Fårvang</value>
+  </data>
+  <data name="PC8883" xml:space="preserve">
+    <value>Gjern</value>
+  </data>
+  <data name="PC8900" xml:space="preserve">
+    <value>Randers C</value>
+  </data>
+  <data name="PC8920" xml:space="preserve">
+    <value>Randers NV</value>
+  </data>
+  <data name="PC8930" xml:space="preserve">
+    <value>Randers NØ</value>
+  </data>
+  <data name="PC8940" xml:space="preserve">
+    <value>Randers SV</value>
+  </data>
+  <data name="PC8950" xml:space="preserve">
+    <value>Ørsted</value>
+  </data>
+  <data name="PC8960" xml:space="preserve">
+    <value>Randers SØ</value>
+  </data>
+  <data name="PC8961" xml:space="preserve">
+    <value>Allingåbro</value>
+  </data>
+  <data name="PC8963" xml:space="preserve">
+    <value>Auning</value>
+  </data>
+  <data name="PC8970" xml:space="preserve">
+    <value>Havndal</value>
+  </data>
+  <data name="PC8981" xml:space="preserve">
+    <value>Spentrup</value>
+  </data>
+  <data name="PC8983" xml:space="preserve">
+    <value>Gjerlev J</value>
+  </data>
+  <data name="PC8990" xml:space="preserve">
+    <value>Fårup</value>
+  </data>
+  <data name="PC9000" xml:space="preserve">
+    <value>Aalborg</value>
+  </data>
+  <data name="PC9029" xml:space="preserve">
+    <value>Aalborg</value>
+  </data>
+  <data name="PC9100" xml:space="preserve">
+    <value>Aalborg</value>
+  </data>
+  <data name="PC914" xml:space="preserve">
+    <value>Københavns Pakkecenter</value>
+  </data>
+  <data name="PC9200" xml:space="preserve">
+    <value>Aalborg SV</value>
+  </data>
+  <data name="PC9210" xml:space="preserve">
+    <value>Aalborg SØ</value>
+  </data>
+  <data name="PC9220" xml:space="preserve">
+    <value>Aalborg Øst</value>
+  </data>
+  <data name="PC9230" xml:space="preserve">
+    <value>Svenstrup J</value>
+  </data>
+  <data name="PC9240" xml:space="preserve">
+    <value>Nibe</value>
+  </data>
+  <data name="PC9260" xml:space="preserve">
+    <value>Gistrup</value>
+  </data>
+  <data name="PC9270" xml:space="preserve">
+    <value>Klarup</value>
+  </data>
+  <data name="PC9280" xml:space="preserve">
+    <value>Storvorde</value>
+  </data>
+  <data name="PC9293" xml:space="preserve">
+    <value>Kongerslev</value>
+  </data>
+  <data name="PC9300" xml:space="preserve">
+    <value>Sæby</value>
+  </data>
+  <data name="PC9310" xml:space="preserve">
+    <value>Vodskov</value>
+  </data>
+  <data name="PC9320" xml:space="preserve">
+    <value>Hjallerup</value>
+  </data>
+  <data name="PC9330" xml:space="preserve">
+    <value>Dronninglund</value>
+  </data>
+  <data name="PC9340" xml:space="preserve">
+    <value>Asaa</value>
+  </data>
+  <data name="PC9352" xml:space="preserve">
+    <value>Dybvad</value>
+  </data>
+  <data name="PC9362" xml:space="preserve">
+    <value>Gandrup</value>
+  </data>
+  <data name="PC9370" xml:space="preserve">
+    <value>Hals</value>
+  </data>
+  <data name="PC9380" xml:space="preserve">
+    <value>Vestbjerg</value>
+  </data>
+  <data name="PC9381" xml:space="preserve">
+    <value>Sulsted</value>
+  </data>
+  <data name="PC9382" xml:space="preserve">
+    <value>Tylstrup</value>
+  </data>
+  <data name="PC9400" xml:space="preserve">
+    <value>Nørresundby</value>
+  </data>
+  <data name="PC9430" xml:space="preserve">
+    <value>Vadum</value>
+  </data>
+  <data name="PC9440" xml:space="preserve">
+    <value>Aabybro</value>
+  </data>
+  <data name="PC9460" xml:space="preserve">
+    <value>Brovst</value>
+  </data>
+  <data name="PC9480" xml:space="preserve">
+    <value>Løkken</value>
+  </data>
+  <data name="PC9490" xml:space="preserve">
+    <value>Pandrup</value>
+  </data>
+  <data name="PC9492" xml:space="preserve">
+    <value>Blokhus</value>
+  </data>
+  <data name="PC9493" xml:space="preserve">
+    <value>Saltum</value>
+  </data>
+  <data name="PC9500" xml:space="preserve">
+    <value>Hobro</value>
+  </data>
+  <data name="PC9510" xml:space="preserve">
+    <value>Arden</value>
+  </data>
+  <data name="PC9520" xml:space="preserve">
+    <value>Skørping</value>
+  </data>
+  <data name="PC9530" xml:space="preserve">
+    <value>Støvring</value>
+  </data>
+  <data name="PC9541" xml:space="preserve">
+    <value>Suldrup</value>
+  </data>
+  <data name="PC9550" xml:space="preserve">
+    <value>Mariager</value>
+  </data>
+  <data name="PC9560" xml:space="preserve">
+    <value>Hadsund</value>
+  </data>
+  <data name="PC9574" xml:space="preserve">
+    <value>Bælum</value>
+  </data>
+  <data name="PC9575" xml:space="preserve">
+    <value>Terndrup</value>
+  </data>
+  <data name="PC9600" xml:space="preserve">
+    <value>Aars</value>
+  </data>
+  <data name="PC9610" xml:space="preserve">
+    <value>Nørager</value>
+  </data>
+  <data name="PC9620" xml:space="preserve">
+    <value>Aalestrup</value>
+  </data>
+  <data name="PC9631" xml:space="preserve">
+    <value>Gedsted</value>
+  </data>
+  <data name="PC9632" xml:space="preserve">
+    <value>Møldrup</value>
+  </data>
+  <data name="PC9640" xml:space="preserve">
+    <value>Farsø</value>
+  </data>
+  <data name="PC9670" xml:space="preserve">
+    <value>Løgstør</value>
+  </data>
+  <data name="PC9681" xml:space="preserve">
+    <value>Ranum</value>
+  </data>
+  <data name="PC9690" xml:space="preserve">
+    <value>Fjerritslev</value>
+  </data>
+  <data name="PC9700" xml:space="preserve">
+    <value>Brønderslev</value>
+  </data>
+  <data name="PC9740" xml:space="preserve">
+    <value>Jerslev J</value>
+  </data>
+  <data name="PC9750" xml:space="preserve">
+    <value>Østervrå</value>
+  </data>
+  <data name="PC9760" xml:space="preserve">
+    <value>Vrå</value>
+  </data>
+  <data name="PC9800" xml:space="preserve">
+    <value>Hjørring</value>
+  </data>
+  <data name="PC9830" xml:space="preserve">
+    <value>Tårs</value>
+  </data>
+  <data name="PC9850" xml:space="preserve">
+    <value>Hirtshals</value>
+  </data>
+  <data name="PC9870" xml:space="preserve">
+    <value>Sindal</value>
+  </data>
+  <data name="PC9881" xml:space="preserve">
+    <value>Bindslev</value>
+  </data>
+  <data name="PC9900" xml:space="preserve">
+    <value>Frederikshavn</value>
+  </data>
+  <data name="PC9940" xml:space="preserve">
+    <value>Læsø</value>
+  </data>
+  <data name="PC9970" xml:space="preserve">
+    <value>Strandby</value>
+  </data>
+  <data name="PC9981" xml:space="preserve">
+    <value>Jerup</value>
+  </data>
+  <data name="PC9982" xml:space="preserve">
+    <value>Ålbæk</value>
+  </data>
+  <data name="PC9990" xml:space="preserve">
+    <value>Skagen</value>
+  </data>
+</root>

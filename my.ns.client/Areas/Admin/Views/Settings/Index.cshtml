@@ -1,0 +1,125 @@
+﻿@model System.Collections.Specialized.NameValueCollection
+@using System.Collections.Specialized;
+@{
+    ViewBag.Title = "Server Settings";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ActionLink("Add Setting", "Create", null, htmlAttributes: new { @class = "btn btn-default" })
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>
+            Key
+        </th>
+        <th>
+            Value
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var key in Model.AllKeys)
+    {
+        if (Model[key].GetType() != typeof(string))
+        {
+            continue;
+        }
+
+        <tr class="settings-row">
+            <td>
+                @key
+            </td>
+            <td>
+                @Model[key].ToString()
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = key }, new { @class = "editlink btn btn-default" })
+                <a href="#" class="editsave btn btn-default" style="display:none">Save</a>
+                <a href="#" class="editcancel btn btn-default" style="display:none">Cancel</a>
+                @Html.ActionLink("Delete", "Delete", new { id = key }, new
+           {
+               @class = "btn btn-default",
+               onclick = "return confirm('Are you sure you wish to delete this setting?');"
+           })
+            </td>
+        </tr>
+    }
+
+
+</table>
+@using (Html.BeginForm("Edit", "Settings", FormMethod.Post, new { id = "editform" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="key" value="" />
+    <input type="hidden" name="value" value="" />
+}
+@section scripts {
+    <style>
+        .table td:nth-child(3) {
+            width: 250px;
+        }
+
+        tr.settings-row > td {
+            line-height: 100% !important;
+            vertical-align: middle !important;
+        }
+    </style>
+    <script>
+        var curRow = null;
+        function toggleLinks($row, value, action) {
+            if (curRow != null) {
+                var _tmp = curRow; curRow = null;
+                toggleLinks(_tmp, value);
+            }
+            if (action == 'edit') {
+                $row.find('a[class*="edit"]').hide();
+                $row.find('a:not([class*="editlink"])').show();
+                var input = $("<input type='text' class='form-control text-box' value='" + value + "' />")
+                $row.find('td:nth-child(2)').html(input);
+                input.focus();
+                $('html, body').animate({
+                    scrollTop: input.offset().top - 150
+                }, 200);
+            } else {
+                $row.find('a[class*="edit"]').hide();
+                $row.find('a[class*="editlink"]').show();
+                $row.find('td:nth-child(2)').html(value);
+            }
+            curRow = $row
+        }
+        $('.editlink').click(function (e) {
+            var row = $(this).parent().parent();
+            var key = row.find('td:first-child').text().trim();
+            var value = row.find('td:nth-child(2)').text().trim();
+            var form = $('#editform')
+
+            form.attr('action', $(this).attr("data-href"));
+            form.find('[name=key]').val(key);
+            form.find('[name=value]').val(value);
+            toggleLinks(row, value, 'edit');
+            e.preventDefault();
+            return false;
+        }).each(function () {
+            $(this).attr("data-href", $(this).attr("href")).attr("href", "#");
+        });
+        $('.editcancel').click(function (e) {
+            var row = $(this).parent().parent();
+            var value = row.find("input").val();
+            toggleLinks(row, value)
+            e.preventDefault();
+            return false;
+        });
+        $('.editsave').click(function (e) {
+            var row = $(this).parent().parent();
+            var value = row.find("input").val();
+            var form = $('#editform');
+            form.find('[name=value]').val(value);
+            row.find('td:nth-child(2)').html(value);
+            form.submit();
+        })
+    </script>
+}

@@ -1,0 +1,36 @@
+﻿@model my.ns.client.Models.ExternalLoginConfirmationViewModel
+@using i18n = Resources.Views.Account.ViewTranslation
+
+@{
+    ViewBag.Title = i18n.ExternalLoginConfirmationTitle;
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@Html.FormatValue(ViewBag.LoginProvider, i18n.ExternalLoginConfirmationSubTitle1)</h3>
+
+@using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <h4>@i18n.ExternalLoginConfirmationSubTitle2</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <p class="text-info">
+        @Html.FormatValue(ViewBag.LoginProvider, i18n.ExternalLoginConfirmationTextInfo)
+    </p>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label nowrapping" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="@i18n.RegisterButtonText" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

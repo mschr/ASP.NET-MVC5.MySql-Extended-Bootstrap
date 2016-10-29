@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C111819F-0B10-423B-B8AE-0E3E0177351A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>msdev.kirodk.Resources</RootNamespace>
+    <AssemblyName>msdev.kirodk.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Misc\PostalCodes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PostalCodes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.da-DK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Account\ViewTranslation.da-DK.Designer.cs">
+      <DependentUpon>ViewTranslation.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Account\ViewTranslation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewTranslation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Resources.da-DK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Users\Resources.da-DK1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Users\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\ViewTranslation.da-DK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewTranslation.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\ViewTranslation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewTranslation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\ViewTranslation.da-DK.Designer.cs">
+      <DependentUpon>ViewTranslation.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Home\ViewTranslation.Designer.cs">
+      <DependentUpon>ViewTranslation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Clinics\ViewTranslation.da-DK.Designer.cs">
+      <DependentUpon>ViewTranslation.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Clinics\ViewTranslation.Designer.cs">
+      <DependentUpon>ViewTranslation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Manage\ViewTranslation.da-DK.Designer.cs">
+      <DependentUpon>ViewTranslation.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Manage\ViewTranslation.Designer.cs">
+      <DependentUpon>ViewTranslation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Shared\Resources.da-DK.Designer.cs">
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Shared\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Misc\PostalCodes.resx">
+      <CustomToolNamespace>Resources.Misc</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PostalCodes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Account\ViewTranslation.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Account</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Account\ViewTranslation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Account</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Resources.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Admin.</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Admin</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Users\Resources.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Admin.Users</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Users\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Admin.Users</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\ViewTranslation.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Common</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\ViewTranslation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Common</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\ViewTranslation.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Home</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\ViewTranslation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Home</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clinics\ViewTranslation.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Clinics</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clinics\ViewTranslation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Clinics</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Manage\ViewTranslation.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Manage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Manage\ViewTranslation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewTranslation.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Manage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Shared\Resources.da-DK.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Shared</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Shared\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources.Views.Shared</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

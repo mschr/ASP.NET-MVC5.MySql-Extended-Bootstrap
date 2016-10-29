@@ -1,0 +1,64 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using my.ns.client.Helpers
+
+@if (Request.IsAuthenticated)
+{
+    var currentUser = User.Identity.GetApplicationUser();
+
+    using (Html.BeginForm("LogOff", "Account", new { area="" }, FormMethod.Post, new { id = "logoutForm", @class = "" }))
+    {
+        @Html.AntiForgeryToken()
+    }
+
+    <ul class="nav profile navbar-nav navbar-right">
+        <li class="dropdown vcenter">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="navbar-login">
+                        <div class="row">
+                            <div class="col-lg-3 col-xs-12">
+                                <p class="text-center">
+                                    <span class="glyphicon glyphicon-user icon-size"></span>
+                                </p>
+                            </div>
+                            <div class="col-lg-9 col-xs-12">
+                                <p class="text-left">
+                                    <strong>@currentUser.UserName</strong>
+                                </p>
+                                <p class="text-left small">@currentUser.GetClaimValue(System.Security.Claims.ClaimTypes.GivenName)</p>
+                                <p class="text-left">
+                                    @Html.ActionLink("Profile", "Index", "Profile", routeValues: null,
+                           htmlAttributes: new { title = "Manage", @class = "btn btn-primary btn-block btn-sm" })
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="navbar-login navbar-login-session">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>
+                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-danger btn-block">Log off</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        @* <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+        <li>@Html.ActionLink("Login", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

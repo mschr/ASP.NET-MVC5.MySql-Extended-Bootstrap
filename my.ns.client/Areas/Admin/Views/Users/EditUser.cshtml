@@ -1,0 +1,56 @@
+﻿@model my.ns.entities.dto.identity.User
+@using my.ns.client.Helpers
+@using i18n = Resources.Views.Admin.Users.Resources
+@using i18nNav = Resources.Views.Admin.Resources
+@using i18nCommon = Resources.Views.Common.ViewTranslation
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = i18nNav.UsersController_EditUserNavText;
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ButtonBack("Index")
+    @Html.ActionLink(i18nNav.UsersController_EditUserRolesNavText, "EditRoles", new { UserName = Model.UserName }, new { @class = "btn btn-default" })
+    @Html.ActionLink(i18nNav.UsersController_EditUserClaimsNavText, "EditClaims", new { UserName = Model.UserName }, new { @class = "btn btn-default" })
+</p>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email,
+           htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LockoutEndDateUtc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.LockoutEndDateUtc, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="@i18nCommon.SaveButtonText" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

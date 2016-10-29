@@ -1,0 +1,12 @@
+﻿@using i18n = Resources.Views.Account.ViewTranslation
+@{
+    ;
+    ViewBag.Title = i18n.ConfirmEmailTitle;
+}
+
+<h2>@ViewBag.Title.</h2>
+<div>
+    <p>
+        @i18n.ConfirmEmailThanks. @Html.ActionLink(i18n.ClickToLoginLinkText, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+    </p>
+</div>

@@ -1,0 +1,102 @@
+﻿@model PagedList.IPagedList<my.ns.entities.dto.identity.User>
+@using PagedList.Mvc;
+@using my.ns.client.Helpers;
+@using i18n = Resources.Views.Admin.Users.Resources
+@using i18nNav = Resources.Views.Admin.Resources
+@using i18nCommon = Resources.Views.Common.ViewTranslation
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+<style>
+    .pagination {
+        margin: 0;
+    }
+</style>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = i18nNav.UsersController_ListNavText;
+
+    PagedListRenderOptions opts = new PagedListRenderOptions
+    {
+        EllipsesFormat = "&#8230;",
+        LinkToFirstPageFormat = "««",
+        LinkToPreviousPageFormat = "«",
+        LinkToIndividualPageFormat = "{0}",
+        LinkToNextPageFormat = "»",
+        LinkToLastPageFormat = "»»",
+        PageCountAndCurrentLocationFormat = "Page {0} of {1}.",
+        DisplayLinkToFirstPage = PagedListDisplayMode.Never,
+        DisplayLinkToLastPage = PagedListDisplayMode.Never,
+        DisplayLinkToPreviousPage = PagedListDisplayMode.IfNeeded,
+        DisplayLinkToNextPage = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        MaximumPageNumbersToDisplay = 3,
+        DisplayLinkToIndividualPages = true,
+        DisplayEllipsesWhenNotShowingAllPageNumbers = true
+    };
+}
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ActionLink(i18nNav.UsersController_CreateNavText, "Create", null, new { @class = "btn btn-default" })
+    @Html.ActionLink(i18nNav.UsersController_ViewAllRolesNavText, "ViewAllRoles", null, new { @class = "btn btn-default" })
+</p>
+
+<hr />
+@using (Html.BeginForm("Index", "Users", FormMethod.Get, new { @class = "form-inline" }))
+{
+    <div class="form-group">
+        @Html.TextBox("searchStringUserNameOrEmail", ViewBag.CurrentFilter as string, htmlAttributes: new
+   {
+       @class = "form-control",
+       placeholder = "Filter list"
+   })
+    </div>
+    <div class="form-group">
+        @Html.Button(i18nCommon.SearchButtonText, new { @class = "btn-default form-control", type = "submit" })
+    </div>
+            <div class="form-group pull-right">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new
+           {
+               page,
+               searchStringUserNameOrEmail = ViewBag.searchStringUserNameOrEmail,
+               currentFilter = ViewBag.CurrentFilter
+           }), opts)
+            </div>
+}
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.LabelFor(modelItem => Model.First().Email)
+        </th>
+        <th>
+            @Html.LabelFor(modelItem => Model.First().LockoutEndDateUtc)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LockoutEndDateUtc)
+            </td>
+            <td>
+                @Html.ButtonEdit("EditUser", new { UserName = item.UserName })
+                @if ((item.UserName.ToLower() != this.User.Identity.Name.ToLower()))
+                {
+                    @Html.ActionLink(i18nCommon.DeleteButtonText, "DeleteUser", new { UserName = item.UserName },
+                    new
+                    {
+                        onclick = string.Format("return confirm(\"{0}\");", string.Format(i18n.DeleteUserConfirmationText, item.UserName)),
+                        @class = "btn btn-danger"
+                    })
+                }
+            </td>
+        </tr>
+    }
+
+
+</table>

@@ -1,0 +1,132 @@
+﻿@model my.ns.entities.dto.identity.UserAndClaims
+@using my.ns.client.Helpers
+@using i18n = Resources.Views.Admin.Users.Resources
+@using i18nNav = Resources.Views.Admin.Resources
+@using i18nCommon = Resources.Views.Common.ViewTranslation
+@{
+        ViewBag.Title = i18nNav.UsersController_EditUserClaimsNavText;
+        Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    IEnumerable<System.Reflection.FieldInfo> fields = ViewBag.fields;
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ButtonBack("EditUser", new { UserName = Model.UserName })
+    @Html.ButtonCreate("AddClaim", new { UserName = Model.UserName })
+</p>
+
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            Key
+        </th>
+        <th>
+            Value
+        </th>
+
+        <th></th>
+    </tr>
+    @foreach (var item in Model.Claims)
+    {
+        <tr class="settings-row">
+            @{ 
+                var _f = fields.Where(f => f.GetValue(null).ToString() == item.ClaimType).First();
+                var type = item.ClaimType;
+                var typeDisplayName = Resources.Views.Admin.Users.Resources.ResourceManager.GetString("ClaimType_" + _f.Name);
+            }
+            <td data-claimType="@item.ClaimType">@typeDisplayName</td>
+            <td>@item.ClaimValue</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", null, new { @class = "editlink btn btn-default" })
+                <a href="#" class="editsave btn btn-default" style="display:none">Save</a>
+                <a href="#" class="editcancel btn btn-default" style="display:none">Cancel</a>
+                @*@Html.ActionLink("Delete", "Delete", new { UserName = Model.UserName }, new
+           {
+               @class = "btn btn-default",
+               onclick = "return confirm('Are you sure you wish to delete this setting?');"
+           })*@
+            </td>
+        </tr>
+    }
+
+
+</table>
+@using (Html.BeginForm("EditClaims", "Users", FormMethod.Post, new { id = "editform" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.UserName)
+    <input type="hidden" name="ClaimType" value="" />
+    <input type="hidden" name="ClaimValue" value="" />
+}
+@section scripts {
+    <style>
+        .table td:nth-child(3) {
+            width: 250px;
+        }
+
+        tr.settings-row > td {
+            line-height: 100% !important;
+            vertical-align: middle !important;
+        }
+    </style>
+    <script>
+        var curRow = null, cancelValue = "";
+        function toggleLinks($row, value, action) {
+            if (curRow != null) {
+                var _tmp = curRow; curRow = null;
+                toggleLinks(_tmp, value);
+            }
+            if (action == 'edit') {
+                $row.find('a[class*="edit"]').hide();
+                $row.find('a:not([class*="editlink"])').show();
+                var input = $("<input type='text' class='form-control text-box' value='" + value + "' />")
+                $row.find('td:nth-child(2)').html(input);
+                input.focus();
+                $('html, body').animate({
+                    scrollTop: input.offset().top - 150
+                }, 200);
+            } else {
+                $row.find('a[class*="edit"]').hide();
+                $row.find('a[class*="editlink"]').show();
+                $row.find('td:nth-child(2)').html(value);
+            }
+            curRow = $row
+        }
+        $('.editlink').click(function (e) {
+            var row = $(this).parent().parent();
+            var claimType = row.find('td:first-child').attr("data-claimtype");
+            var claimValue = cancelValue = row.find('td:nth-child(2)').text().trim();
+            var form = $('#editform')
+
+            //form.attr('action', $(this).attr("data-href"));
+            form.find('[name=ClaimType]').val(claimType);
+            form.find('[name=ClaimValue]').val(claimValue);
+            toggleLinks(row, claimValue, 'edit');
+            e.preventDefault();
+            return false;
+        }).each(function () {
+            $(this).attr("data-href", $(this).attr("href")).attr("href", "#");
+        });
+        $('.editcancel').click(function (e) {
+            var row = $(this).parent().parent();
+            toggleLinks(row, cancelValue)
+            e.preventDefault();
+            return false;
+        });
+        $('.editsave').click(function (e) {
+            var row = $(this).parent().parent();
+            var claimValue = row.find("input").val();
+            var form = $('#editform');
+            form.find('[name=ClaimValue]').val(claimValue);
+            row.find('td:nth-child(2)').html(claimValue);
+            form.submit();
+        })
+    </script>
+}
+

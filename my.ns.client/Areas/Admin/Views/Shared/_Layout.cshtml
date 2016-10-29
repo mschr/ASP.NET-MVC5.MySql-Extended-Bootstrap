@@ -1,0 +1,119 @@
+﻿@using my.ns.client.Helpers
+@using i18n = Resources.Views.Admin.Resources;
+@using System.Reflection
+@{
+    var controller = (ViewContext.RouteData.Values["controller"] as string).ToLower().Replace(" ", "");
+    var action = (ViewContext.RouteData.Values["action"] as string).ToLower().Replace(" ", "");
+
+    string curController = "";
+    string curAction = "";
+    string szHtml = "<ul class='nav navbar-nav nav-sidebar'>";
+    string screenReaderCurrent = "<span class=\"sr-only\">(current)</span>" + Html.GlyphIcon("arrow-left");
+    string activeListItemProperties = " class=\"active\"";
+    List<string> SideBarLists = new List<string>();
+    foreach (MethodInfo m in ViewBag.ActionMethods)
+    {
+        if (m.DeclaringType.FullName.Contains("Areas.Admin") && m.GetParameters().Count() == 0)
+        {
+
+            var _c = m.DeclaringType.Name; //.Replace("Controller", "");
+            var _m = m.Name;
+            var _l = i18n.ResourceManager.GetString(_c + "_" + _m + "NavText");
+            bool _active = controller.Equals(_c.Replace("Controller", "")) && action.Equals(_m);
+            if (curController != "" && _c != curController)
+            {
+                SideBarLists.Add(szHtml + "</ul>");
+                szHtml = "<ul class='nav navbar-nav nav-sidebar'>";
+            }
+            curController = _c;
+            if (_active)
+            {
+                szHtml += "<li "+ activeListItemProperties +"><a href='" + Url.Action(_m, _c.Replace("Controller", "")) + "'>" + _l + screenReaderCurrent + "</a></li>";
+
+            }
+            else {
+                szHtml += "<li><a href='" + Url.Action(_m, _c.Replace("Controller", "")) + "'>" + _l + "</a></li>";
+            }
+        }
+    }
+    SideBarLists.Add(szHtml + "</ul>"); // lonlychild-fix
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Debug Dashboard</title>
+    <!-- Custom styles for this template -->
+    <link href="@Url.Content("~/Content/Admin.css")" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="topnav navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="@Url.Content("~/")">
+                        <span class="top">Application</span>
+                        <span class="sub">Name</span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                @Html.Partial("_LoginPartial")
+
+                <ul class="nav site-links navbar-nav navbar-right">
+                    <li class="vcenter">@Html.ActionLink("Dashboard", "Index", "Dashboard")</li>
+                    <li class="vcenter dropdown">@Html.ActionLink("Settings", "Index", "Settings")</li>
+                    <li class="vcenter">@Html.ActionLink(Resources.Views.Home.ViewTranslation.HomeContactNavText, "Contact", "Home", new { area = "" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="clearfix"></div>
+    <main class="body-content" role="main">
+        <nav class="navbar sidebar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">@ViewBag.Title</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                    @Html.Raw(String.Join("", SideBarLists))
+                </div>
+            </div>
+
+        </nav>
+        <section class="main">
+            @RenderBody()
+
+        </section>
+    </main>
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/jqueryui")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/js")
+    @RenderSection("scripts", required: false)
+    <script>$('ul.nav-sidebar li:only-child').parent().addClass("lonlychild-fix");</script>
+    <div id="infoModal"></div>
+</body>
+</html>

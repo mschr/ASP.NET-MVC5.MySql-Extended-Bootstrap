@@ -1,0 +1,250 @@
+﻿@model IEnumerable<my.ns.entities.Log4Net.LogModel>
+@using System.Text.RegularExpressions
+
+@{
+    ViewBag.Title = "Dbg Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="row placeholders">
+    <div class="col-xs-12 col-sm-6 placeholder">
+        <table class="logStream log-table table table-fixed">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Level)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Exception)
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="logStream">
+                <tr><td colspan="4">awaiting data</td></tr>
+            </tbody>
+        </table>
+        <h4>Latest logs</h4>
+        <span class="text-muted">
+            <a onclick="if ($(this).text().match(/disc/)) {
+                $.connection.hub.stop(); $(this).text('(connect)');
+            } else {
+                $.connection.hub.start(); $(this).text('(disconnect)');
+            }">(disconnect)</a>
+        </span>
+    </div>
+    @*<div class="col-xs-6 col-sm-3 placeholder">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+        </div>*@
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+        <h4>Label</h4>
+        <span class="text-muted">Something else</span>
+    </div>
+</div>
+<h2>@ViewBag.SectionTitle</h2>
+<div class="table-responsive">
+    <table class="log-table table table-striped">
+        <thead>
+            <tr>
+                <th style="width:150px;">
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th style="width:40px;">
+                    @Html.DisplayNameFor(model => model.Thread)
+                </th>
+                <th style="width:100px;">
+                    @Html.DisplayNameFor(model => model.Level)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Logger)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th class="col-sm-1">
+                    @Html.DisplayNameFor(model => model.Exception)
+                </th>
+            </tr>
+        </thead>
+        <tbody id="logMessages">
+            @if (Model != null && Model.Count() > 0)
+            {
+                var exceptionSplit = new Regex(Regex.Escape(" ved "));
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Thread)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Level)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Logger)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Message)
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.Exception))
+                            {
+                                <div class="btn btn-danger" title="' + @exceptionSplit.Replace(item.Exception, @" ved\n", 1)">&nbsp;</div>
+                            }
+                        </td>
+
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="6">awaiting data</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts{
+    <link href="~/Content/jquery.tablesorter-theme.default.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.tablesorter.js"></script>
+    <script src="~/Scripts/jquery.tablesorter.widgets.js"></script>
+    <script>
+        function logEntryCellHtml(key, values) {
+            var szHtml = "";
+            var nsprefix = "msdev.kirodk";
+            key = key + "";//assert is string
+            switch (key) {
+                case 'Date':
+                    szHtml += '<td>' + values[key].replace(/T/, "<br/>").replace(/\.[0-9]+$/, '') + '</td>';
+                    break;
+                case 'Logger':
+                    szHtml += '<td>m.k' + values[key].substring(nsprefix.length) + '</td>';
+                    break;
+                case 'Exception':
+                    if (values[key] == null) {
+                        var title = 'System.Exception: General Failure \n' +
+                        'ved msdev.kirodk.client.Controllers.PluginController.DbgDashboard() i C:\Users\morten\Documents\Visual Studio 2015\Projects\msdev.kirodk\msdev.kirodk.client\Controllers\PluginController.cs:linje 42';
+                        szHtml += '<td><div class="btn btn-danger" data-toggle="tooltip" title="' + title + '">&nbsp;</div></td>';
+                        //szHtml += '<td></td>';
+                        break;
+                    }
+                    var split = values[key].indexOf(" ved ");
+                    if (split <= 0) split = values[key].indexOf(" at ");
+                    if (split > 0) {
+                        var title = values[key].substring(0, split + 4) + "\n" +
+                                    values[key].substring(split + 4);
+                        szHtml += '<td><div class="btn btn-danger" data-toggle="tooltip" title="' + title + '">&nbsp;</div></td>'
+                    } else {
+                        szHtml += '<td>' + values[key] + '</td>';
+                    }
+                    break;
+                default:
+                    szHtml += '<td>' + values[key] + '</td>';
+                    break;
+            }
+            return szHtml;
+        }
+
+        $.getScript("/signalr/hubs", function () {
+            // subscribing to hub:logs
+            var hub = $.connection.logs;
+            $.connection.hub.logging = true;
+            // receiver end for logs newentry
+            hub.client.processEntry = function (s, mainTableOnly) {
+                var values = $(s).get(0);
+                console.log(values);
+                var _keys = ["Date", "Thread", "Level", "Logger", "Message", "Exception"];
+                var szHtml = "<tr>";
+                $(_keys).each(function () {
+                    szHtml += logEntryCellHtml(this, values);
+                });
+                szHtml += '</tr>';
+                $(szHtml).insertBefore($('#logMessages tr:first-child'))
+
+                if ($('#logMessages')[0].children.length > 250)
+                    $('#logMessages tr:last-child').remove();
+
+                if (mainTableOnly)
+                    return;
+
+                _keys = ["Date", "Level", "Message", "Exception"];
+                szHtml = "<tr>";
+                $(_keys).each(function () {
+                    szHtml += logEntryCellHtml(this, values);
+                });
+                szHtml += '</tr>';
+
+                $(szHtml).insertBefore($('#logStream tr:first-child'))
+
+                if ($('#logMessages')[0].children.length > 15)
+                    $('#logMessages tr:last-child').remove();
+
+            }
+            $.connection.hub.start().done(function () {
+
+                hub.server.getLogs(50).then(function (list) {
+                    for (var i = list.length - 1; i >= 0; i--) {
+                        hub.client.processEntry($([list[i]]), i > list.length - 20);
+                    }
+                })
+            })
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.log-table.table-striped').tablesorter({
+                usNumberFormat: false,
+                sortReset: true,
+                sortRestart: true,
+                widgets: ["pager", "filter"],
+                widgetOptions: {
+                    // output default: '{page}/{totalPages}'
+                    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+                    pager_output: '{startRow} - {endRow} / {filteredRows} ({totalRows})', // '{page}/{totalPages}'
+                    pager_removeRows: false,
+
+
+                    // include child row content while filtering, if true
+                    // class name applied to filter row and each input
+                    filter_cssFilter: 'tablesorter-filter',
+                    // search from beginning
+                    filter_startsWith: false,
+                    // Set this option to false to make the searches case sensitive
+                    filter_ignoreCase: true,
+                    filter_hideFilters: true,
+                    filter_functions: {
+                        1: null,
+                        // Add these options to the select dropdown (regex example)
+                        2: {
+                            'ALL': function (e, n, f, i, $r, c, data) { return true; },
+                            'TRACE': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); },
+                            'DEBUG': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); },
+                            'INFO': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); },
+                            'WARN': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); },
+                            'ERROR': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); },
+                            'FATAL': function (e, n, f, i, $r, c, data) { return /^[TRACE]/i.test(e); }
+                        }
+
+                    }
+                }
+            });
+        });
+    </script>
+}
